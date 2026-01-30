@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Mahendra | Web Developer</title>
+    <meta name="description"
+        content="Portfolio of Ari Mahendra, a Web Developer specializing in creating modern and attractive websites.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">AM<span>.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Profil</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h3 class="fade-in">Halo, nama saya</h3>
+            <h1 class="fade-in delay-1">Ari Mahendra</h1>
+            <h2 class="fade-in delay-2">App & Web Developer | <span class="highlight">AI Prompt Engineer</span></h2>
+            <p class="fade-in delay-3">Membangun ekosistem digital yang modern, dari aplikasi perusahaan hingga Super
+                App skala besar. Mengubah ide kompleks menjadi solusi teknologi yang elegan.</p>
+            <a href="#projects" class="btn fade-in delay-4">Lihat Portfolio</a>
+        </div>
+        <!-- Background Animation Elements -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image fade-in left">
+                    <div class="img-container">
+                        <img src="profile.jpg" alt="Ari Mahendra" class="profile-pic">
+                    </div>
+                </div>
+                <div class="about-text fade-in right">
+                    <h3>App Developer & AI Prompt Engineer</h3>
+                    <p>Halo! Saya Ari Mahendra. Developer yang mengombinasikan coding dengan keahlian AI Prompt
+                        Engineering. Saya membangun sistem yang handal dan memanfaatkan kecerdasan buatan untuk solusi
+                        yang lebih cerdas.</p>
+                    <p>Pengalaman saya mencakup <strong>Kios Market</strong> (ekosistem mirip Grab), aplikasi koperasi
+                        perusahaan, sistem kasir (POS), dan prompt engineering untuk AI. Fokus: inovasi, fungsionalitas,
+                        dan teknologi masa depan.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>26</h4>
+                            <p>Umur</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Tahun Pengalaman</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>20+</h4>
+                            <p>Proyek Selesai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in up">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Struktur web modern dan semantik.</p>
+                </div>
+                <div class="skill-card fade-in up delay-1">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Styling responsif, Flexbox, Grid, dan Animasi.</p>
+                </div>
+                <div class="skill-card fade-in up delay-2">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interaktivitas dinamis dan manipulasi DOM.</p>
+                </div>
+                <div class="skill-card fade-in up delay-3">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>UI/UX yang menarik dan user-friendly.</p>
+                </div>
+                <div class="skill-card fade-in up delay-4">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>AI Prompt Engineering</h3>
+                    <p>Optimasi AI untuk hasil maksimal dan solusi cerdas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Proyek Unggulan</h2>
+            <div class="project-grid">
+                <!-- Kios Market -->
+                <div class="project-card fade-in">
+                    <div class="project-img"
+                        style="background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-shop" style="font-size: 4rem; color: white;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kios Market V2</h3>
+                        <p>Sebuah ekosistem Super App skala besar mirip Grab. Mengintegrasikan layanan multi-store,
+                            manajemen pesanan real-time, dan pembayaran digital dalam satu platform yang mulus.</p>
+                        <span class="highlight">Complex Ecosystem</span>
+                    </div>
+                </div>
+
+                <!-- Aplikasi Koperasi -->
+                <div class="project-card fade-in delay-1">
+                    <div class="project-img"
+                        style="background: linear-gradient(135deg, #1A2980 0%, #26D0CE 100%); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-building-columns" style="font-size: 4rem; color: white;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistem Koperasi Perusahaan</h3>
+                        <p>Solusi digital komprehensif untuk manajemen koperasi modern. Menangani keanggotaan, simpan
+                            pinjam, dan laporan keuangan dengan keamanan tingkat tinggi.</p>
+                        <span class="highlight">Enterprise Solution</span>
+                    </div>
+                </div>
+
+                <!-- Aplikasi Kasir -->
+                <div class="project-card fade-in delay-2">
+                    <div class="project-img"
+                        style="background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-cash-register" style="font-size: 4rem; color: white;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart POS (Point of Sales)</h3>
+                        <p>Aplikasi kasir pintar yang dirancang untuk kecepatan transaksi. Dilengkapi fitur manajemen
+                            stok, laporan penjualan harian, dan analitik bisnis.</p>
+                        <span class="highlight">Business Tool</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Hubungi Saya</h2>
+            <p class="contact-subtitle fade-in">Tertarik bekerja sama? Mari kita buat sesuatu yang luar biasa.</p>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in left">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>arimahendra1202@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>0852-6307-4753</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span>Indonesia</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/6285263074753" target="_blank" title="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/arimahendra19" target="_blank" title="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com/public/Ari-Mahendra" target="_blank" title="Facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <!-- Keeping generic GitHub/LinkedIn if needed, or removing if user only wants specified ones. User said 'informasi lengkap' so maybe just what they provided. -->
+                    </div>
+                </div>
+                <form class="contact-form fade-in right">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Ari Mahendra. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
