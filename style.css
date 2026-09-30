@@ -981,3 +981,180 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==============================================================================
+   TIMELINE / EXPERIENCE (CLEAN MODERN ARCHITECTURE)
+   ============================================================================== */
+.experience {
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border);
+}
+
+.timeline {
+    position: relative;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 56px;
+    margin-bottom: 32px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 9px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    background: var(--bg-main);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 0.7rem;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 22px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.timeline-content h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+}
+
+.timeline-content h4 {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.timeline-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.timeline-tags span {
+    background: var(--bg-surface);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+}
+
+/* ==============================================================================
+   TESTIMONIALS (CLEAN BENTO CARDS)
+   ============================================================================== */
+.testimonials {
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border);
+}
+
+.testimonials-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    border-color: var(--border-hover);
+}
+
+.testimonial-rating {
+    color: #F59E0B;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-author i {
+    width: 36px;
+    height: 36px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+}
+
+.author-info h4 {
+    font-size: 0.92rem;
+    margin-bottom: 2px;
+}
+
+.author-info p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.slider-controls,
+.slider-dots {
+    display: none !important;
+}
