@@ -128,10 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.querySelector('.typing-animation');
     if (typingElement) {
         const texts = [
-            'Full Stack Developer',
-            'AI Prompt Engineer',
-            'Mobile App Developer',
-            'UI/UX Enthusiast'
+            'Full Stack Product Builder',
+            'Enterprise SaaS Architect',
+            'Flutter & Mobile App Creator',
+            'AI Systems & Automation Engineer'
         ];
         let textIndex = 0;
         let charIndex = 0;
