@@ -38,29 +38,7 @@
 
     <!-- Particles Background -->
     <!-- Floating Theme Switcher -->
-    <div class="theme-switcher-panel">
-        <button class="theme-toggle-btn" id="themeToggleBtn">
-            <i class="fas fa-palette"></i>
-        </button>
-        <div class="theme-options" id="themeOptions">
-            <button class="theme-option" data-theme="default">
-                
-                <span>Default</span>
-            </button>
-            <button class="theme-option" data-theme="purple">
-                
-                <span>Purple</span>
-            </button>
-            <button class="theme-option" data-theme="blue">
-                
-                <span>Blue</span>
-            </button>
-            <button class="theme-option" data-theme="orange">
-                
-                <span>Orange</span>
-            </button>
-        </div>
-    </div>
+    
 
     <!-- Header / Navigation -->
     <header class="header glass-effect">
@@ -145,28 +123,28 @@
                     <div class="stat-icon">
                         <i class="fab fa-google-play"></i>
                     </div>
-                    <h3 class="counter" data-target="3">0</h3>
+                    <h3 class="counter" data-target="3">3</h3>
                     <p>Apps di Play Store</p>
                 </div>
                 <div class="stat-box glass-effect">
                     <div class="stat-icon">
                         <i class="fas fa-cubes"></i>
                     </div>
-                    <h3 class="counter" data-target="40">0</h3>
+                    <h3 class="counter" data-target="40">40+</h3>
                     <p>Cloud Functions</p>
                 </div>
                 <div class="stat-box glass-effect">
                     <div class="stat-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <h3 class="counter" data-target="6">0</h3>
+                    <h3 class="counter" data-target="6">6+</h3>
                     <p>Tahun Pengalaman</p>
                 </div>
                 <div class="stat-box glass-effect">
                     <div class="stat-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="counter" data-target="100">0</h3>
+                    <h3 class="counter" data-target="100">100%</h3>
                     <p>% Live & Verified</p>
                 </div>
             </div>
@@ -305,7 +283,7 @@
                             <span class="skill-percentage">95%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="95"></div>
+                            <div class="skill-progress-fill" data-progress="95" style="width: 95%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-1">
@@ -314,7 +292,7 @@
                             <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="90"></div>
+                            <div class="skill-progress-fill" data-progress="90" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-2">
@@ -323,7 +301,7 @@
                             <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="85"></div>
+                            <div class="skill-progress-fill" data-progress="85" style="width: 85%;"></div>
                         </div>
                     </div>
                 </div>
@@ -338,7 +316,7 @@
                             <span class="skill-percentage">88%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="88"></div>
+                            <div class="skill-progress-fill" data-progress="88" style="width: 88%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-1">
@@ -347,7 +325,7 @@
                             <span class="skill-percentage">82%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="82"></div>
+                            <div class="skill-progress-fill" data-progress="82" style="width: 82%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-2">
@@ -356,7 +334,7 @@
                             <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="85"></div>
+                            <div class="skill-progress-fill" data-progress="85" style="width: 85%;"></div>
                         </div>
                     </div>
                 </div>
@@ -371,7 +349,7 @@
                             <span class="skill-percentage">92%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="92"></div>
+                            <div class="skill-progress-fill" data-progress="92" style="width: 92%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-1">
@@ -380,7 +358,7 @@
                             <span class="skill-percentage">80%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="80"></div>
+                            <div class="skill-progress-fill" data-progress="80" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill-bar-item fade-in delay-2">
@@ -389,7 +367,7 @@
                             <span class="skill-percentage">78%</span>
                         </div>
                         <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="78"></div>
+                            <div class="skill-progress-fill" data-progress="78" style="width: 78%;"></div>
                         </div>
                     </div>
                 </div>
@@ -435,53 +413,62 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title fade-in">Proyek & Produk Unggulan</h2>
-            <p class="section-subtitle fade-in">Karya nyata skala produksi yang aktif dan dapat diuji langsung</p>
-            <div class="project-grid">
+            <div class="section-header">
+                <span class="section-tag">Karya Skala Produksi</span>
+                <h2 class="section-title">Proyek & Produk Unggulan</h2>
+                <p class="section-subtitle">Sistem perangkat lunak nyata yang aktif, teruji di pasar, dan dapat diverifikasi langsung</p>
+            </div>
+            
+            <div class="bento-project-grid">
                 
-                <!-- 1. Kios Market Ecosystem -->
-                <div class="project-card fade-in" >
-                    <div class="project-img"
-                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div class="live-badge"><span class="live-dot"></span> LIVE DI PLAY STORE</div>
-                        <i class="fa-solid fa-store" style="font-size: 3.8rem; color: white;"></i>
+                <!-- FEATURED 1: KIOS MARKET ECOSYSTEM (FULL WIDTH BENTO HERO) -->
+                <div class="project-card featured-card">
+                    <div class="featured-badge">
+                        <span class="live-dot"></span> 3 APLIKASI AKTIF DI GOOGLE PLAY STORE
                     </div>
-                    <div class="project-info">
-                        <h3>Kios Market Ecosystem (3 Apps)</h3>
-                        <p>Platform Hyperlocal Marketplace & Logistik On-Demand di Duri, Riau. Mengusung arsitektur <b>Flutter Monorepo</b> untuk 3 aplikasi terpisah: Buyer, Merchant (Seller), dan Driver. Didukung <b>40+ Microservices GCP Cloud Functions</b>, real-time driver tracking via Firebase RTDB, dan <i>Financial Integrity Engine</i>.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flutter Monorepo</span>
-                            <span class="tag">GCP Functions (40+)</span>
-                            <span class="tag">Firebase RTDB</span>
-                            <span class="tag">Firestore</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.buyer" target="_blank" class="project-btn project-btn-play" title="Download Buyer App">
-                                <i class="fab fa-google-play"></i> App Buyer
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.seller" target="_blank" class="project-btn project-btn-play" title="Download Merchant App">
-                                <i class="fab fa-google-play"></i> App Merchant
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.driver" target="_blank" class="project-btn project-btn-play" title="Download Driver App">
-                                <i class="fab fa-google-play"></i> App Driver
-                            </a>
-                            <a href="https://kiosmarketindonesia.id" target="_blank" class="project-btn" title="Kunjungi Website Kios Market">
-                                <i class="fas fa-globe"></i> Web
-                            </a>
+                    <div class="featured-content">
+                        <div class="featured-text">
+                            <span class="project-category">Hyperlocal Super App & On-Demand Logistics</span>
+                            <h3>Kios Market Ecosystem (Buyer, Merchant, Driver)</h3>
+                            <p>
+                                Platform marketplace lokal dan layanan antar cepat di Duri, Riau. Dibangun dengan arsitektur <b>Flutter Monorepo</b> yang mengintegrasikan tiga aplikasi terpisah dalam satu basis kode terpadu. Didukung oleh <b>40+ Serverless Microservices di Google Cloud Platform</b>, pelacakan kurir live real-time berbasis <b>Firebase Realtime Database (RTDB)</b>, dan sistem buku besar transaksi <i>Financial Integrity Engine</i>.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter Monorepo</span>
+                                <span class="tag">GCP Cloud Functions (40+)</span>
+                                <span class="tag">Firebase RTDB Tracking</span>
+                                <span class="tag">Google Firestore</span>
+                                <span class="tag">Financial Ledger</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.buyer" target="_blank" class="project-btn project-btn-play" title="Download Kios Market di Google Play">
+                                    <i class="fab fa-google-play"></i> App Buyer
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.seller" target="_blank" class="project-btn project-btn-play" title="Download Kios Market Merchant di Google Play">
+                                    <i class="fab fa-google-play"></i> App Merchant
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.driver" target="_blank" class="project-btn project-btn-play" title="Download Kios Market Driver di Google Play">
+                                    <i class="fab fa-google-play"></i> App Driver
+                                </a>
+                                <a href="https://kiosmarketindonesia.id" target="_blank" class="project-btn" title="Kunjungi Website Kios Market">
+                                    <i class="fas fa-globe"></i> Website Resmi
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Koperasi Mandiri Utama Seroja -->
-                <div class="project-card fade-in delay-1" >
-                    <div class="project-img"
-                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div class="live-badge"><span class="live-dot"></span> LIVE WEB SAAS</div>
-                        <i class="fa-solid fa-building-columns" style="font-size: 3.8rem; color: white;"></i>
+                <!-- 2. KOPERASI MANDIRI UTAMA SEROJA -->
+                <div class="project-card">
+                    <div class="card-header-badge">
+                        <span class="live-dot"></span> LIVE WEB SAAS
                     </div>
                     <div class="project-info">
-                        <h3>Koperasi Mandiri Utama Seroja (SaaS)</h3>
-                        <p>Aplikasi web SaaS internal untuk digitalisasi manajemen koperasi karyawan modern. Mengelola data keanggotaan terpusat, buku besar simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan laporan keuangan terenkripsi dengan Role-Based Access Control (RBAC).</p>
+                        <span class="project-category">Enterprise SaaS & Financial System</span>
+                        <h3>Koperasi Mandiri Utama Seroja</h3>
+                        <p>
+                            Solusi aplikasi web SaaS internal untuk digitalisasi manajemen koperasi karyawan: pencatatan keanggotaan terpusat, pembukuan simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan laporan neraca keuangan terenkripsi dengan Role-Based Access Control (RBAC).
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Enterprise SaaS</span>
                             <span class="tag">PHP / Laravel</span>
@@ -496,16 +483,17 @@
                     </div>
                 </div>
 
-                <!-- 3. KiosMovie Video Streaming Platform -->
-                <div class="project-card fade-in delay-2" >
-                    <div class="project-img"
-                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div class="live-badge"><span class="live-dot"></span> LIVE STREAMING</div>
-                        <i class="fa-solid fa-play" style="font-size: 3.8rem; color: white;"></i>
+                <!-- 3. KIOSMOVIE STREAMING PLATFORM -->
+                <div class="project-card">
+                    <div class="card-header-badge">
+                        <span class="live-dot"></span> LIVE WEB PLATFORM
                     </div>
                     <div class="project-info">
+                        <span class="project-category">Distributed Video Streaming & AI Automation</span>
                         <h3>KiosMovie Streaming Platform</h3>
-                        <p>Platform agregasi dan streaming film/drama berkinerja tinggi. Menggunakan frontend Jamstack di Cloudflare Pages, backend Node.js pada Oracle Cloud VPS yang dihubungkan secara aman via Cloudflare Tunnels (Zero Trust), dan <i>Automated AI Pipeline</i> untuk pembuatan sinopsis film otomatis.</p>
+                        <p>
+                            Platform agregasi dan streaming film berkinerja tinggi. Menggunakan frontend Jamstack di Cloudflare Pages, backend Node.js pada Oracle Cloud VPS yang dihubungkan secara aman via Cloudflare Tunnels (Zero Trust), dan alur kerja AI untuk pembuatan sinopsis film otomatis.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">Cloudflare Pages</span>
                             <span class="tag">Node.js API</span>
@@ -520,16 +508,17 @@
                     </div>
                 </div>
 
-                <!-- 4. Smart POS & Retail System -->
-                <div class="project-card fade-in" >
-                    <div class="project-img"
-                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div class="live-badge"><span class="live-dot"></span> PRODUCTION PWA</div>
-                        <i class="fa-solid fa-cash-register" style="font-size: 3.8rem; color: white;"></i>
+                <!-- 4. SMART CLOUD POS & RETAIL SYSTEM -->
+                <div class="project-card">
+                    <div class="card-header-badge">
+                        <span class="live-dot"></span> PRODUCTION PWA
                     </div>
                     <div class="project-info">
-                        <h3>Smart Cloud POS & Retail System</h3>
-                        <p>Aplikasi kasir pintar berbasis Progressive Web App (PWA) untuk kecepatan transaksi ritel UMKM. Dilengkapi pencatatan transaksi penjualan instan, manajemen kontrol stok multi-kategori, laporan omset harian, dan fitur cetak struk digital.</p>
+                        <span class="project-category">Retail Point of Sale & Inventory</span>
+                        <h3>Smart Cloud POS (Kasir UMKM)</h3>
+                        <p>
+                            Aplikasi kasir pintar berbasis Progressive Web App (PWA) untuk kecepatan transaksi ritel UMKM. Dilengkapi pencatatan transaksi penjualan instan, manajemen kontrol stok multi-kategori, laporan omset harian, dan fitur cetak struk digital.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">JavaScript PWA</span>
                             <span class="tag">Firebase</span>
@@ -539,16 +528,17 @@
                     </div>
                 </div>
 
-                <!-- 5. Autonomous AI Agents & Hybrid Cloud -->
-                <div class="project-card fade-in delay-1" >
-                    <div class="project-img"
-                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div class="live-badge"><span class="live-dot"></span> HYBRID CLOUD & AI</div>
-                        <i class="fa-solid fa-robot" style="font-size: 3.8rem; color: #38bdf8;"></i>
+                <!-- 5. AUTONOMOUS AI AGENTS & HYBRID CLOUD -->
+                <div class="project-card">
+                    <div class="card-header-badge">
+                        <span class="live-dot"></span> HYBRID CLOUD & AI
                     </div>
                     <div class="project-info">
-                        <h3>Autonomous AI Agents & Multi-Gateway</h3>
-                        <p>Infrastruktur agen AI mandiri dan micro-gateway bot Telegram pintar (@pantaukesehatanbot dan @penghilNgbot zero-storage image processing). Berjalan di atas jaringan hybrid cloud mandiri yang menghubungkan server OCI (12GB RAM), AWS Lightsail Singapore, dan home server via Tailscale Mesh VPN.</p>
+                        <span class="project-category">AI Infrastructure & Micro-Gateways</span>
+                        <h3>Autonomous AI Agents & Mesh Cloud</h3>
+                        <p>
+                            Infrastruktur agen AI mandiri dan bot Telegram mikro-gateway (@pantaukesehatanbot dan @penghilNgbot zero-storage image processing). Berjalan di atas jaringan hybrid cloud mandiri yang menghubungkan server OCI (12GB RAM), AWS Lightsail Singapore, dan home server via Tailscale Mesh VPN.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">AI LLM Agents</span>
                             <span class="tag">Python OpenCV</span>

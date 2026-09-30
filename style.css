@@ -1158,3 +1158,123 @@ section {
 .slider-dots {
     display: none !important;
 }
+
+/* ==============================================================================
+   HEADER & NAVBAR PERFECTION
+   ============================================================================== */
+header.header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(9, 13, 22, 0.9) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-list li a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: var(--transition);
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+    color: var(--accent);
+}
+
+/* ==============================================================================
+   BENTO PROJECT GRID (SYMMETRICAL & BALANCED 1 HERO + 4 GRID)
+   ============================================================================== */
+.bento-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.featured-card {
+    grid-column: 1 / -1;
+    background: #0E1626 !important;
+    border: 1px solid #1E293B !important;
+    padding: 30px !important;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.featured-card:hover {
+    border-color: var(--accent) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-emerald-bg);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: 0.05em;
+}
+
+.project-category {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+.card-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--bg-surface);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.68rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 860px) {
+    .bento-project-grid {
+        grid-template-columns: 1fr;
+    }
+    .featured-card {
+        padding: 20px !important;
+    }
+}
