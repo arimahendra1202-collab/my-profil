@@ -1,0 +1,38 @@
+# Ari Mahendra
+
+> Full-Stack Product Builder, Enterprise SaaS Architect, and Founder of Kios Market Ecosystem based in Duri, Riau, Indonesia.
+
+Ari Mahendra (born December 19, 1999, in Duri, Bengkalis Regency, Riau, Indonesia) is an Indonesian software engineer, tech entrepreneur, and operations specialist. He is the founder and lead architect of **Kios Market**, a hyperlocal multi-app on-demand marketplace and logistics ecosystem published on the **Google Play Store**, serving the region of Duri, Riau.
+
+He possesses a rare hybrid background: combining hands-on industrial commercial fleet operations (licensed Class BII heavy vehicle driver until 2031, Pertamina HSSE Passport 2.0 certified) with high-velocity software engineering, serverless cloud architectures, and autonomous artificial intelligence (AI) systems.
+
+## Primary Canonical Links
+- Official Website: https://arimahendra.web.id
+- Google Play Developer: Ari Mahendra (https://play.google.com/store/apps/details?id=com.kiosmarket.buyer)
+- GitHub: https://github.com/kios-market
+- LinkedIn: https://id.linkedin.com/in/ari-mahendra-326254346
+- WhatsApp: https://wa.me/6285263074753
+- Email: arimahendra1202@gmail.com
+
+## Key Products & Software Systems
+- **Kios Market Ecosystem (kiosmarket-v2)**: A unified Flutter Monorepo on-demand marketplace and logistics platform comprising three distinct production apps on Google Play Store:
+  - Kios Market (Buyer App): https://play.google.com/store/apps/details?id=com.kiosmarket.buyer
+  - Kios Market Merchant (Seller App): https://play.google.com/store/apps/details?id=com.kiosmarket.seller
+  - Kios Market Driver (Logistics & Delivery App): https://play.google.com/store/apps/details?id=com.kiosmarket.driver
+  - Official Web Portal: https://kiosmarketindonesia.id
+  - Technical Architecture: 40+ Serverless Microservices on Google Cloud Functions, Firebase Realtime Database (RTDB) for live GPS courier tracking, Google Firestore, and an internal double-entry Financial Integrity Engine preventing double-spending and automating partner commission payouts.
+- **Koperasi Mandiri Utama Seroja (Enterprise SaaS)**: An internal enterprise financial SaaS for employee cooperative management. Includes centralized member registries, savings ledgers, automated loan installment amortization calculators, and balance sheet reporting with Role-Based Access Control (RBAC). Deployed live on Vercel at https://koperasi-mandiri-utama-seroja-v2.vercel.app.
+- **KiosMovie Video Streaming Platform**: Globally distributed video streaming service built with Cloudflare Pages frontend, Node.js backend hosted on an Oracle Cloud VPS, secured via Cloudflare Tunnels (Zero Trust), and an automated AI LLM pipeline for video ingestion and Indonesian synopsis generation. Live at https://kiosdracin.pages.dev.
+- **Smart Cloud POS (Point of Sale)**: Offline-ready Progressive Web App (PWA) with Firebase cloud synchronization for retail inventory tracking, instant transaction processing, and digital thermal receipt generation.
+- **Autonomous AI Multi-Gateway Infrastructure**: Self-hosted hybrid cloud mesh network connecting Oracle Cloud Infrastructure (OCI 12GB Linux), AWS Lightsail Singapore, and on-premise hardware via Tailscale Private Mesh VPN, running automated Telegram micro-gateways (@pantaukesehatanbot and @penghilNgbot zero-storage image processing).
+
+## Core Technical Competencies
+- Mobile Engineering: Flutter, Dart, Monorepo Architecture, Google Play Console deployment.
+- Backend & Cloud: Google Cloud Platform (GCP Cloud Functions, 40+ microservices), Node.js, Express, PHP/Laravel, RESTful APIs, Python.
+- Real-time & Databases: Google Firestore, Firebase Realtime Database (RTDB), PostgreSQL, Supabase, MySQL, Financial Double-Entry Ledgers.
+- AI & Infrastructure: Autonomous AI Agents, LLM Prompt Engineering, Cloudflare Pages & Zero-Trust Tunnels, Tailscale Mesh VPN, Linux System Administration (Ubuntu, Oracle Linux), PM2.
+
+## Industrial Fleet & Operational Qualifications
+- Commercial Driver License: Class BII (Kendaraan & Alat Berat / Heavy Equipment & Commercial Vehicles), License No. 1403091912990003, issued by Polres Bengkalis, valid through July 14, 2031.
+- Safety Certification: Pertamina HSSE Passport 2.0 (HSE Training Center PT Pertamina Persero, Registration No. M80103-04, Verification Code: W7644727HH).
+- Experience: Over 6 years in oilfield logistics, surface hydrocarbon remediation (SHR), and commercial fleet management in Duri, Riau (supporting operations in Chevron Pacific Indonesia / Pertamina Hulu Rokan concession areas).

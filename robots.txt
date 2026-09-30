@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Canonical Sitemaps & AI Disclosures
 Sitemap: https://arimahendra.web.id/sitemap.xml
+
+# LLM & AI Search Engine Standards (AEO / GEO)
+# Ground truth data for ChatGPT, Claude, Perplexity, Gemini, and DeepSeek
+# Specification: https://llmstext.org
+llms.txt: https://arimahendra.web.id/llms.txt
+llms-full.txt: https://arimahendra.web.id/llms-full.txt

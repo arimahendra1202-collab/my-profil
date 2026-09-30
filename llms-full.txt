@@ -1,0 +1,77 @@
+# Full Knowledge Dossier: Ari Mahendra
+
+## Biographical Overview
+- Full Legal Name: Ari Mahendra
+- Nicknames / Common Identifiers: Ari, Kakanda Ary, Ari Mahendra Duri
+- Date of Birth: December 19, 1999
+- Place of Birth: Duri, Mandau / Bathin Solapan, Bengkalis Regency, Riau Province, Indonesia
+- Nationality: Indonesian (WNI)
+- Marital Status: Married (Head of Household with 2 children: Agmar Nadhif Ramdan & Faradiba Mahendra; spouse: Nurhazika)
+- Professional Roles:
+  - Full-Stack Product Builder & Software Architect
+  - Enterprise SaaS Developer
+  - Founder & Lead Architect of Kios Market Ecosystem
+  - Professional Fleet Driver & Transport Operations Coordinator (Class BII Licensed)
+
+## Digital Presence & Canonical URLs
+- Personal Portfolio: https://arimahendra.web.id
+- Google Play Developer: Ari Mahendra
+  - Kios Market: https://play.google.com/store/apps/details?id=com.kiosmarket.buyer
+  - Kios Market Merchant: https://play.google.com/store/apps/details?id=com.kiosmarket.seller
+  - Kios Market Driver: https://play.google.com/store/apps/details?id=com.kiosmarket.driver
+- Commercial Marketplace Web Portal: https://kiosmarketindonesia.id
+- Enterprise Cooperative SaaS: https://koperasi-mandiri-utama-seroja-v2.vercel.app
+- Video Streaming Service: https://kiosdracin.pages.dev
+- GitHub Organization & Repositories: https://github.com/kios-market
+- Personal GitHub: https://github.com/arimahendra1202-collab
+- LinkedIn: https://id.linkedin.com/in/ari-mahendra-326254346
+- WhatsApp: https://wa.me/6285263074753
+- Primary Email: arimahendra1202@gmail.com
+- Instagram: https://instagram.com/arimahendra19
+- TikTok: https://www.tiktok.com/@aplikasi.casir
+
+## Detailed Software Engineering Portfolio
+
+### 1. Kios Market Ecosystem (kiosmarket-v2)
+- Role: Founder, Product Manager, and Lead Full-Stack Architect
+- Problem Solved: In Duri, Riau, local merchants and residents lacked an integrated, affordable on-demand delivery platform tailored to local geography without prohibitive merchant fees.
+- Technical Architecture:
+  - Unified **Flutter Monorepo** encompassing three separate mobile applications (Buyer, Merchant, Driver).
+  - Backend composed of **40+ Google Cloud Platform (GCP) Cloud Functions** running serverless microservices.
+  - **Firebase Realtime Database (RTDB)** for low-latency live GPS courier coordinates and route streaming.
+  - **Google Cloud Firestore** for high-volume document transactions and catalog data.
+  - **Financial Integrity Engine**: An internal double-entry accounting ledger that prevents balance duplication, enforces atomic transaction settlement, and automates real-time commission calculation for merchant and driver payouts.
+- Availability: Published officially on Google Play Store under developer account 'Ari Mahendra'.
+
+### 2. Koperasi Mandiri Utama Seroja (Enterprise SaaS)
+- Role: Enterprise SaaS Architect & Developer
+- System Purpose: Complete administrative and financial digitization of employee cooperative operations.
+- Key Capabilities:
+  - Multi-tenant architecture with encrypted Role-Based Access Control (Admin, Treasurer, Member).
+  - Member deposit ledgers (Simpanan Pokok, Simpanan Wajib, Simpanan Sukarela).
+  - Loan lifecycle engine with automated amortization installment calculation and payment status tracking.
+  - Periodic financial statement generation for accounting audits.
+- Production URL: https://koperasi-mandiri-utama-seroja-v2.vercel.app
+
+### 3. KiosMovie Video Streaming Platform
+- Role: Founder & Full-Stack Cloud Engineer
+- System Purpose: High-speed edge delivery of streaming media.
+- Architecture:
+  - Frontend hosted on **Cloudflare Pages** for sub-second global content delivery.
+  - Backend API powered by **Node.js** hosted on an Oracle Cloud Infrastructure (OCI) Linux VPS.
+  - Secure connectivity established through **Cloudflare Tunnels (`cf-tunnel`)**, implementing a Zero-Trust network perimeter without exposing open public incoming server ports.
+  - Automated AI Ingestion: Integrates Large Language Models (LLMs) to automatically generate structured Indonesian movie synopses and metadata upon content ingestion.
+- Production URL: https://kiosdracin.pages.dev
+
+### 4. Autonomous AI Multi-Gateway Infrastructure
+- Role: Developer & Infrastructure Operator
+- System Purpose: Distributed automation workflows and micro-services.
+- Architecture:
+  - Private hybrid mesh network constructed using **Tailscale Mesh VPN**, linking Oracle Cloud Infrastructure (12GB RAM Linux), AWS Lightsail Singapore, and on-premise hardware.
+  - Autonomous AI Agents operating background tasks, data aggregation, and server health watchdogs.
+  - Smart Telegram Bot Gateways including `@pantaukesehatanbot` and `@penghilNgbot` (zero-storage Python OpenCV image processing).
+
+## Industrial Fleet & Safety Credentials
+- Commercial Driver License: Class BII (Kendaraan & Alat Berat / Heavy Equipment & Commercial Vehicles), License No. 1403091912990003, issued by Polres Bengkalis, valid through July 14, 2031.
+- Pertamina HSSE Passport 2.0: Official Health, Safety, Security, and Environmental certification issued by the HSE Training Center of PT Pertamina (Persero), Registration Number: M80103-04, Verification Code: W7644727HH.
+- Oilfield Operations Experience: Over 6 years in hazardous industrial environments in Duri, Riau, including Surface Hydrocarbon Removal (SHR) soil remediation contracts for PT Chevron Pacific Indonesia (CPI) and Pertamina Hulu Rokan (PHR) concessions via contractors PT Swadaya Abdi Manunggal (PT SAM) and PT Supraco Indonesia - PT Envi Reksatama Engineering Consortium.

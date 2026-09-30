@@ -32,20 +32,120 @@
 
     <!-- JSON-LD Structured Data for Google Search -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ari Mahendra",
-        "jobTitle": "Full-Stack Product Builder & Enterprise SaaS Architect",
-        "url": "https://arimahendra.web.id/",
-        "image": "https://arimahendra.web.id/og-image.jpg",
-        "sameAs": [
-            "https://github.com/kios-market",
-            "https://id.linkedin.com/in/ari-mahendra-326254346",
-            "https://play.google.com/store/apps/details?id=com.kiosmarket.buyer"
-        ],
-        "description": "Creator of Kios Market Ecosystem (3 apps on Google Play Store), Enterprise Financial Cooperative SaaS, and Autonomous AI Infrastructure."
-    }
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Person",
+            "@id": "https://arimahendra.web.id/#person",
+            "name": "Ari Mahendra",
+            "givenName": "Ari",
+            "familyName": "Mahendra",
+            "alternateName": [
+                "Ary",
+                "Kakanda Ary",
+                "Ari Mahendra Duri"
+            ],
+            "gender": "Male",
+            "birthDate": "1999-12-19",
+            "birthPlace": {
+                "@type": "Place",
+                "name": "Duri, Bengkalis, Riau, Indonesia"
+            },
+            "nationality": {
+                "@type": "Country",
+                "name": "Indonesia"
+            },
+            "jobTitle": [
+                "Full-Stack Product Builder",
+                "Enterprise SaaS Architect",
+                "Founder & Lead Architect of Kios Market"
+            ],
+            "url": "https://arimahendra.web.id/",
+            "image": "https://arimahendra.web.id/og-image.jpg",
+            "email": "arimahendra1202@gmail.com",
+            "telephone": "+6285263074753",
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "SMAN 1 Mandau, Bengkalis"
+            },
+            "knowsAbout": [
+                "Flutter",
+                "Dart",
+                "Google Cloud Platform",
+                "Serverless Microservices",
+                "Firebase Realtime Database",
+                "Google Firestore",
+                "Cloudflare Pages & Tunnels",
+                "Autonomous AI Agents",
+                "Large Language Models (LLM)",
+                "Commercial Fleet Transportation",
+                "Pertamina HSSE Safety Standards"
+            ],
+            "sameAs": [
+                "https://play.google.com/store/apps/details?id=com.kiosmarket.buyer",
+                "https://play.google.com/store/apps/details?id=com.kiosmarket.seller",
+                "https://play.google.com/store/apps/details?id=com.kiosmarket.driver",
+                "https://github.com/kios-market",
+                "https://id.linkedin.com/in/ari-mahendra-326254346",
+                "https://kiosmarketindonesia.id",
+                "https://kiosdracin.pages.dev",
+                "https://koperasi-mandiri-utama-seroja-v2.vercel.app",
+                "https://instagram.com/arimahendra19",
+                "https://www.tiktok.com/@aplikasi.casir",
+                "https://facebook.com/public/Ari-Mahendra"
+            ],
+            "description": "Indonesian Full-Stack Product Builder, Enterprise SaaS Architect, and Founder of Kios Market Ecosystem (3 apps on Google Play Store). Combining software engineering and heavy commercial fleet logistics."
+        },
+        {
+            "@type": "SoftwareApplication",
+            "name": "Kios Market",
+            "operatingSystem": "Android",
+            "applicationCategory": "ShoppingApplication",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.kiosmarket.buyer",
+            "author": {
+                "@id": "https://arimahendra.web.id/#person"
+            },
+            "description": "Local online shopping and on-demand delivery app in Duri, Riau, Indonesia.",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "IDR"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "name": "Kios Market Merchant",
+            "operatingSystem": "Android",
+            "applicationCategory": "BusinessApplication",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.kiosmarket.seller",
+            "author": {
+                "@id": "https://arimahendra.web.id/#person"
+            },
+            "description": "Store and catalog management application for Kios Market partners in Duri, Riau."
+        },
+        {
+            "@type": "SoftwareApplication",
+            "name": "Kios Market Driver",
+            "operatingSystem": "Android",
+            "applicationCategory": "LogisticsApplication",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.kiosmarket.driver",
+            "author": {
+                "@id": "https://arimahendra.web.id/#person"
+            },
+            "description": "Real-time order dispatch and GPS navigation application for Kios Market delivery drivers."
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://arimahendra.web.id/#website",
+            "url": "https://arimahendra.web.id/",
+            "name": "Ari Mahendra Official Portfolio",
+            "author": {
+                "@id": "https://arimahendra.web.id/#person"
+            }
+        }
+    ]
+}
     </script>
     
     <!-- Fonts: Inter & Space Grotesk & JetBrains Mono -->
