@@ -15,20 +15,19 @@
     <meta property="og:type" content="website">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'><path d='M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z'/></svg>"><text y='.9em' font-size='90'>💻</text></svg>">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,8 +37,6 @@
     <div class="scroll-progress"></div>
 
     <!-- Particles Background -->
-    <div id="particles-js"></div>
-
     <!-- Floating Theme Switcher -->
     <div class="theme-switcher-panel">
         <button class="theme-toggle-btn" id="themeToggleBtn">
@@ -47,19 +44,19 @@
         </button>
         <div class="theme-options" id="themeOptions">
             <button class="theme-option" data-theme="default">
-                <span class="theme-color" style="background: linear-gradient(135deg, #64ffda, #00b894)"></span>
+                
                 <span>Default</span>
             </button>
             <button class="theme-option" data-theme="purple">
-                <span class="theme-color" style="background: linear-gradient(135deg, #a855f7, #ec4899)"></span>
+                
                 <span>Purple</span>
             </button>
             <button class="theme-option" data-theme="blue">
-                <span class="theme-color" style="background: linear-gradient(135deg, #3b82f6, #06b6d4)"></span>
+                
                 <span>Blue</span>
             </button>
             <button class="theme-option" data-theme="orange">
-                <span class="theme-color" style="background: linear-gradient(135deg, #f97316, #eab308)"></span>
+                
                 <span>Orange</span>
             </button>
         </div>
@@ -68,7 +65,7 @@
     <!-- Header / Navigation -->
     <header class="header glass-effect">
         <nav class="navbar">
-            <a href="#home" class="logo" data-aos="fade-right">
+            <a href="#home" class="logo">
                 <span class="logo-bracket">&lt;</span>
                 AM
                 <span class="logo-bracket">/&gt;</span>
@@ -79,14 +76,14 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-list">
-                <li data-aos="fade-down" data-aos-delay="100"><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li data-aos="fade-down" data-aos-delay="200"><a href="#about" class="nav-link"><i class="fas fa-user"></i> Profil</a></li>
-                <li data-aos="fade-down" data-aos-delay="300"><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                <li data-aos="fade-down" data-aos-delay="400"><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
-                <li data-aos="fade-down" data-aos-delay="500"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Profil</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
             </ul>
             <!-- Dark Mode Toggle -->
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-aos="fade-left">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                 <i class="fas fa-moon"></i>
             </button>
         </nav>
@@ -94,26 +91,21 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg-animation">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <div class="floating-shape shape-4"></div>
-        </div>
+        
         
         <div class="container hero-content">
             <div class="hero-text">
-                <h3 class="fade-in typing-text" data-aos="fade-up">Halo, nama saya</h3>
-                <h1 class="fade-in delay-1 glitch" data-text="Ari Mahendra" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="fade-in typing-text">Halo, nama saya</h3>
+                <h1 class="fade-in delay-1 ">
                     Ari Mahendra
                 </h1>
-                <h2 class="fade-in delay-2" data-aos="fade-up" data-aos-delay="400">
+                <h2 class="fade-in delay-2">
                     <span class="typing-animation"></span>
                 </h2>
-                <p class="fade-in delay-3" data-aos="fade-up" data-aos-delay="600">
+                <p class="fade-in delay-3">
                     Membangun produk digital skala produksi — mulai dari ekosistem mobile multi-app di Google Play Store (Kios Market), sistem SaaS enterprise koperasi, hingga otomasi kecerdasan buatan (AI) & hybrid cloud.
                 </p>
-                <div class="hero-buttons fade-in delay-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="hero-buttons fade-in delay-4">
                     <a href="#projects" class="btn btn-primary">
                         <span>Lihat Portfolio</span>
                         <i class="fas fa-arrow-right"></i>
@@ -125,7 +117,7 @@
                 </div>
                 
                 <!-- Social Links -->
-                <div class="hero-social" data-aos="fade-up" data-aos-delay="1000">
+                <div class="hero-social">
                     <a href="https://wa.me/6285263074753" target="_blank" class="social-icon whatsapp" data-tooltip="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
@@ -148,7 +140,7 @@
             </div>
 
             <!-- Stats Counter -->
-            <div class="hero-stats fade-in delay-5" data-aos="fade-up" data-aos-delay="1200">
+            <div class="hero-stats fade-in delay-5">
                 <div class="stat-box glass-effect">
                     <div class="stat-icon">
                         <i class="fab fa-google-play"></i>
@@ -181,7 +173,7 @@
         </div>
         
         <!-- Scroll Indicator -->
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1400">
+        <div class="scroll-indicator">
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
@@ -192,14 +184,14 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Kenali Saya Lebih Dekat</span>
                 <h2 class="section-title">Tentang Saya</h2>
                 <p class="section-subtitle">Passion, Experience, dan Dedikasi dalam Teknologi</p>
             </div>
             
             <div class="about-content">
-                <div class="about-images" data-aos="fade-right" data-aos-delay="200">
+                <div class="about-images">
                     <div class="img-container main-img glass-effect">
                         <img src="image.png" alt="Ari Mahendra" class="profile-pic">
                         <div class="img-overlay"></div>
@@ -217,16 +209,16 @@
                     <div class="img-decoration decoration-2"></div>
                 </div>
                 
-                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                <div class="about-text">
                     <h3>
                         <span class="highlight-text">Full Stack Product Builder</span> & 
                         <span class="gradient-text">Enterprise SaaS Architect</span>
                     </h3>
                     <div class="badge-container">
-                        <span class="skill-badge">📱 3 Apps di Play Store</span>
-                        <span class="skill-badge">☁️ 40+ GCP Microservices</span>
-                        <span class="skill-badge">🤖 AI Systems Engineer</span>
-                        <span class="skill-badge">⚡ Vibe Coder & Builder</span>
+                        <span class="skill-badge"><i class="fab fa-google-play"></i> 3 Apps di Play Store</span>
+                        <span class="skill-badge"><i class="fas fa-server"></i> 40+ GCP Microservices</span>
+                        <span class="skill-badge"><i class="fas fa-brain"></i> AI Systems Engineer</span>
+                        <span class="skill-badge"><i class="fas fa-laptop-code"></i> Product Builder</span>
                     </div>
                     <p>
                         Halo! Saya <strong>Ari Mahendra</strong>, seorang Product Builder dan Systems Engineer otodidak yang memadukan rekayasa perangkat lunak modern dengan 
@@ -297,7 +289,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Keahlian Teknis</span>
                 <h2 class="section-title">Keahlian</h2>
                 <p class="section-subtitle">Teknologi dan tools yang saya kuasai dengan baik</p>
@@ -448,9 +440,9 @@
             <div class="project-grid">
                 
                 <!-- 1. Kios Market Ecosystem -->
-                <div class="project-card fade-in" data-tilt>
+                <div class="project-card fade-in" >
                     <div class="project-img"
-                        style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
                         <div class="live-badge"><span class="live-dot"></span> LIVE DI PLAY STORE</div>
                         <i class="fa-solid fa-store" style="font-size: 3.8rem; color: white;"></i>
                     </div>
@@ -481,9 +473,9 @@
                 </div>
 
                 <!-- 2. Koperasi Mandiri Utama Seroja -->
-                <div class="project-card fade-in delay-1" data-tilt>
+                <div class="project-card fade-in delay-1" >
                     <div class="project-img"
-                        style="background: linear-gradient(135deg, #0d9488 0%, #115e59 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
                         <div class="live-badge"><span class="live-dot"></span> LIVE WEB SAAS</div>
                         <i class="fa-solid fa-building-columns" style="font-size: 3.8rem; color: white;"></i>
                     </div>
@@ -505,9 +497,9 @@
                 </div>
 
                 <!-- 3. KiosMovie Video Streaming Platform -->
-                <div class="project-card fade-in delay-2" data-tilt>
+                <div class="project-card fade-in delay-2" >
                     <div class="project-img"
-                        style="background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
                         <div class="live-badge"><span class="live-dot"></span> LIVE STREAMING</div>
                         <i class="fa-solid fa-play" style="font-size: 3.8rem; color: white;"></i>
                     </div>
@@ -529,9 +521,9 @@
                 </div>
 
                 <!-- 4. Smart POS & Retail System -->
-                <div class="project-card fade-in" data-tilt>
+                <div class="project-card fade-in" >
                     <div class="project-img"
-                        style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
                         <div class="live-badge"><span class="live-dot"></span> PRODUCTION PWA</div>
                         <i class="fa-solid fa-cash-register" style="font-size: 3.8rem; color: white;"></i>
                     </div>
@@ -548,9 +540,9 @@
                 </div>
 
                 <!-- 5. Autonomous AI Agents & Hybrid Cloud -->
-                <div class="project-card fade-in delay-1" data-tilt>
+                <div class="project-card fade-in delay-1" >
                     <div class="project-img"
-                        style="background: linear-gradient(135deg, #090d16 0%, #1e293b 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        style="background: #1e293b; display: flex; align-items: center; justify-content: center; position: relative;">
                         <div class="live-badge"><span class="live-dot"></span> HYBRID CLOUD & AI</div>
                         <i class="fa-solid fa-robot" style="font-size: 3.8rem; color: #38bdf8;"></i>
                     </div>
@@ -662,7 +654,7 @@
     <!-- Experience & Education Timeline -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Perjalanan Karir</span>
                 <h2 class="section-title">Pengalaman & Pembelajaran</h2>
                 <p class="section-subtitle">Perjalanan saya dalam dunia teknologi dan pengembangan software</p>
@@ -874,11 +866,8 @@
     </button>
 
     <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Vanilla Tilt -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <!-- AOS Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
 </body>

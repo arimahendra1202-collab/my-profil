@@ -353,8 +353,8 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => observer.observe(el));
 
     // ========== PARTICLES.JS CONFIGURATION ==========
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
+    if (typeof // particlesJS !== 'undefined') {
+        // particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: '#64ffda' },
@@ -488,5 +488,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    console.log('%c🚀 Portfolio Loaded Successfully!', 'color: #64ffda; font-size: 20px; font-weight: bold;');
+    console.log('%c Portfolio Loaded Successfully!', 'color: #64ffda; font-size: 20px; font-weight: bold;');
 });

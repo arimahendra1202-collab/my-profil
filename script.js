@@ -296,8 +296,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ========== PARTICLES.JS ==========
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
+    if (typeof // particlesJS !== 'undefined') {
+        // particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: '#64ffda' },
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ========== AOS ANIMATION ==========
     if (typeof AOS !== 'undefined') {
-        AOS.init({
+        // AOS disabled({
             duration: 1000,
             once: true,
             offset: 100
@@ -368,5 +368,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    console.log('%c🚀 Portfolio Loaded!', 'color: #64ffda; font-size: 16px; font-weight: bold;');
+    console.log('%cPortfolio Loaded!', 'color: #64ffda; font-size: 16px; font-weight: bold;');
 });
