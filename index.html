@@ -91,7 +91,7 @@
                     <a href="https://wa.me/6285263074753" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://github.com/kios-market" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:arimahendra0908@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:arimahendra1202@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://instagram.com/arimahendra19" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
 
@@ -530,43 +530,88 @@
         <div class="container">
             <div class="section-label">HUBUNGI SAYA</div>
             <h2 class="section-heading">Mulai Kolaborasi atau Konsultasi Proyek</h2>
-            <p class="section-sub">Saya terbuka untuk proyek pengembangan SaaS, aplikasi mobile, konsultasi arsitektur cloud, atau kemitraan bisnis</p>
+            <p class="section-sub">Saya terbuka untuk proyek pengembangan SaaS, aplikasi mobile Flutter, konsultasi arsitektur cloud, atau kemitraan bisnis</p>
 
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                    <h3>WhatsApp Langsung</h3>
-                    <p>Respon cepat untuk diskusi proyek atau konsultasi teknis.</p>
-                    <a href="https://wa.me/6285263074753" target="_blank" class="contact-link">
-                        +62 852-6307-4753 &rarr;
-                    </a>
+            <div class="contact-layout">
+                <!-- Left: Contact Channels -->
+                <div class="contact-channels">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3>WhatsApp Langsung</h3>
+                        <p>Respon cepat untuk diskusi proyek atau konsultasi teknis.</p>
+                        <a href="https://wa.me/6285263074753" target="_blank" class="contact-link">
+                            +62 852-6307-4753 &rarr;
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Resmi</h3>
+                        <p>Kirimkan brief proyek atau proposal kerjasama formal.</p>
+                        <a href="mailto:arimahendra1202@gmail.com" class="contact-link">
+                            arimahendra1202@gmail.com &rarr;
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub Profile</h3>
+                        <p>Repositori, kontribusi open source, dan basis kode saya.</p>
+                        <a href="https://github.com/kios-market" target="_blank" class="contact-link">
+                            github.com/kios-market &rarr;
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h3>LinkedIn Network</h3>
+                        <p>Terhubung untuk peluang profesional dan relasi industri.</p>
+                        <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" class="contact-link">
+                            Ari Mahendra on LinkedIn &rarr;
+                        </a>
+                    </div>
                 </div>
 
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email Resmi</h3>
-                    <p>Kirimkan brief proyek atau proposal kerjasama formal.</p>
-                    <a href="mailto:arimahendra0908@gmail.com" class="contact-link">
-                        arimahendra0908@gmail.com &rarr;
-                    </a>
-                </div>
+                <!-- Right: Interactive WhatsApp Form -->
+                <div class="contact-form-card">
+                    <div class="form-badge">
+                        <span class="pulse-dot"></span> DIRECT WHATSAPP GATEWAY
+                    </div>
+                    <h3>Kirim Pesan Langsung ke WhatsApp</h3>
+                    <p>Isi formulir di bawah ini, pesan Anda akan langsung diformat rapi dan terhubung ke WhatsApp pribadi saya.</p>
 
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
-                    <h3>GitHub Profile</h3>
-                    <p>Periksa repositori, kontribusi, dan basis kode publik saya.</p>
-                    <a href="https://github.com/kios-market" target="_blank" class="contact-link">
-                        github.com/kios-market &rarr;
-                    </a>
-                </div>
+                    <form id="waForm" onsubmit="sendToWhatsApp(event)">
+                        <div class="form-group">
+                            <label for="senderName">NAMA ANDA / PERUSAHAAN</label>
+                            <input type="text" id="senderName" placeholder="Contoh: Budi Santoso (PT Inovasi)" required>
+                        </div>
 
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-                    <h3>LinkedIn Network</h3>
-                    <p>Terhubung untuk peluang profesional dan relasi industri.</p>
-                    <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" class="contact-link">
-                        Ari Mahendra on LinkedIn &rarr;
-                    </a>
+                        <div class="form-group">
+                            <label for="senderContact">NOMOR WA / EMAIL ANDA</label>
+                            <input type="text" id="senderContact" placeholder="Contoh: 0812-3456-7890 / budi@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectCategory">KEBUTUHAN SISTEM / PROYEK</label>
+                            <select id="projectCategory" required>
+                                <option value="Custom Enterprise SaaS & Sistem Perusahaan">Custom Enterprise SaaS & Sistem Perusahaan</option>
+                                <option value="Aplikasi Mobile Flutter (Android / iOS)">Aplikasi Mobile Flutter (Android / iOS)</option>
+                                <option value="Integrasi AI & Otomasi Workflow">Integrasi AI & Otomasi Workflow</option>
+                                <option value="Website & Cloud Infrastructure">Website & Cloud Infrastructure</option>
+                                <option value="Konsultasi Teknis / Kemitraan Bisnis">Konsultasi Teknis / Kemitraan Bisnis</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senderMessage">PESAN / BRIEF PROYEK</label>
+                            <textarea id="senderMessage" rows="4" placeholder="Ceritakan rencana proyek, target fitur, atau kebutuhan sistem Anda..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Kirim Langsung ke WhatsApp Ari Mahendra</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -596,6 +641,30 @@
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
+        }
+
+        // Direct WhatsApp Message Form Handler
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value.trim();
+            const contact = document.getElementById('senderContact').value.trim();
+            const category = document.getElementById('projectCategory').value;
+            const message = document.getElementById('senderMessage').value.trim();
+
+            const text = `Halo Ari Mahendra,
+
+Nama: ${name}
+Kontak: ${contact}
+Kategori: ${category}
+
+Pesan:
+${message}
+
+(Terkirim via arimahendra.web.id)`;
+
+            const encoded = encodeURIComponent(text);
+            const waUrl = `https://wa.me/6285263074753?text=${encoded}`;
+            window.open(waUrl, '_blank');
         }
     </script>
 </body>

@@ -912,3 +912,119 @@ section {
         align-items: flex-start;
     }
 }
+
+/* ==============================================================================
+   CONTACT SECTION WITH DIRECT WHATSAPP FORM
+   ============================================================================== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.contact-channels {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-standard);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+}
+
+.form-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-emerald-bg);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.contact-form-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+}
+
+.contact-form-card p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background: var(--bg-base);
+    border: 1px solid var(--border-standard);
+    border-radius: var(--radius-sm);
+    padding: 11px 14px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    transition: var(--transition);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: var(--bg-elevated);
+}
+
+.btn-full {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    font-size: 0.88rem;
+    background: #10b981;
+    color: #022c22;
+    border-color: #10b981;
+    font-weight: 600;
+}
+
+.btn-full:hover {
+    background: #34d399;
+    border-color: #34d399;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+@media (max-width: 860px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+    .contact-form-card {
+        padding: 22px;
+    }
+}
