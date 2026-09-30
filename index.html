@@ -1,550 +1,375 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Ari Mahendra | Full Stack Product Builder & Enterprise SaaS Architect</title>
-    <meta name="description" content="Portfolio Ari Mahendra - Full Stack Product Builder, Enterprise SaaS Architect & AI Engineer. Creator of Kios Market Ecosystem (3 Apps on Play Store), SaaS Koperasi, and AI Infrastructure.">
-    <meta name="keywords" content="Full Stack Developer, AI Engineer, Web Developer, Mobile App Developer, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Mahendra | Full-Stack Product Builder & Enterprise SaaS Architect</title>
+    <meta name="description" content="Portfolio resmi Ari Mahendra - Full-Stack Product Builder & Enterprise SaaS Architect. Creator Kios Market (3 aplikasi di Google Play Store), Koperasi SaaS, dan AI Infrastructure.">
     <meta name="author" content="Ari Mahendra">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'><path d='M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z'/></svg>">
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Ari Mahendra | Full Stack Developer & AI Engineer">
-    <meta property="og:description" content="Professional Full Stack Developer specializing in modern web applications and AI integration">
-    <meta property="og:type" content="website">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'><path d='M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z'/></svg>"><text y='.9em' font-size='90'>💻</text></svg>">
-    
-    <!-- Google Fonts -->
+    <!-- Fonts: Inter & Space Grotesk & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <!-- Custom CSS -->
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
 
-    <!-- Particles Background -->
-    <!-- Floating Theme Switcher -->
-    
-
-    <!-- Header / Navigation -->
-    <header class="header glass-effect">
+    <!-- Header / Navbar -->
+    <header class="header">
         <nav class="navbar">
             <a href="#home" class="logo">
-                <span class="logo-bracket">&lt;</span>
-                AM
-                <span class="logo-bracket">/&gt;</span>
+                <span class="logo-accent">&lt;</span>AM<span class="logo-accent">/&gt;</span>
             </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Profil</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek Unggulan</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
-            <!-- Dark Mode Toggle -->
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-            </button>
+
+            <div class="nav-actions">
+                <a href="https://github.com/kios-market" target="_blank" class="nav-icon-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" class="nav-icon-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/6285263074753" target="_blank" class="btn btn-sm btn-primary">
+                    <span>Chat WhatsApp</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        
-        
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h3 class="fade-in typing-text">Halo, nama saya</h3>
-                <h1 class="fade-in delay-1 ">
-                    Ari Mahendra
-                </h1>
-                <h2 class="fade-in delay-2">
-                    <span class="typing-animation"></span>
-                </h2>
-                <p class="fade-in delay-3">
-                    Membangun produk digital skala produksi — mulai dari ekosistem mobile multi-app di Google Play Store (Kios Market), sistem SaaS enterprise koperasi, hingga otomasi kecerdasan buatan (AI) & hybrid cloud.
-                </p>
-                <div class="hero-buttons fade-in delay-4">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>Lihat Portfolio</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Hubungi Saya</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
+        <div class="container hero-container">
+            <div class="hero-left">
+                <div class="status-pill">
+                    <span class="status-dot"></span> Available for Engineering & SaaS Projects
                 </div>
                 
-                <!-- Social Links -->
-                <div class="hero-social">
-                    <a href="https://wa.me/6285263074753" target="_blank" class="social-icon whatsapp" data-tooltip="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
+                <h1 class="hero-title">
+                    Ari Mahendra
+                </h1>
+                
+                <h2 class="hero-role">
+                    Full-Stack Product Builder & <br class="role-break">Enterprise SaaS Architect
+                </h2>
+                
+                <p class="hero-desc">
+                    Merancang, membangun, dan meluncurkan sistem perangkat lunak skala produksi dari hulu ke hilir. 
+                    Creator ekosistem <b>Kios Market</b> (3 aplikasi aktif di Google Play Store), 
+                    arsitektur SaaS koperasi karyawan, hingga infrastruktur agen AI & hybrid cloud mandiri.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Lihat Karya Nyata</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@aplikasi.casir" target="_blank" class="social-icon tiktok" data-tooltip="TikTok">
-                        <i class="fab fa-tiktok"></i>
+                    <a href="CV_Ari_Mahendra_Tech_SaaS_AI.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Download CV (PDF)</span>
                     </a>
-                    <a href="https://instagram.com/arimahendra19" target="_blank" class="social-icon instagram" data-tooltip="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://facebook.com/public/Ari-Mahendra" target="_blank" class="social-icon facebook" data-tooltip="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://github.com/kios-market" target="_blank" class="social-icon github" data-tooltip="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" class="social-icon linkedin" data-tooltip="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                </div>
+
+                <div class="hero-social-list">
+                    <a href="https://wa.me/6285263074753" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/kios-market" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:arimahendra0908@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com/arimahendra19" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <!-- Verified Metrics -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-num">3</div>
+                        <div class="metric-label">Apps di Play Store</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num">40+</div>
+                        <div class="metric-label">GCP Microservices</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num">6+</div>
+                        <div class="metric-label">Tahun Pengalaman</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num">100%</div>
+                        <div class="metric-label">Production Verified</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Stats Counter -->
-            <div class="hero-stats fade-in delay-5">
-                <div class="stat-box glass-effect">
-                    <div class="stat-icon">
-                        <i class="fab fa-google-play"></i>
+            <div class="hero-right">
+                <div class="portrait-card">
+                    <img src="ari_photo_new_badge.jpg" alt="Ari Mahendra" class="portrait-img">
+                    <div class="portrait-footer">
+                        <div class="portrait-name">Ari Mahendra</div>
+                        <div class="portrait-tag">Duri, Riau, ID &bull; Ready Remote / Hybrid</div>
                     </div>
-                    <h3 class="counter" data-target="3">3</h3>
-                    <p>Apps di Play Store</p>
-                </div>
-                <div class="stat-box glass-effect">
-                    <div class="stat-icon">
-                        <i class="fas fa-cubes"></i>
-                    </div>
-                    <h3 class="counter" data-target="40">40+</h3>
-                    <p>Cloud Functions</p>
-                </div>
-                <div class="stat-box glass-effect">
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3 class="counter" data-target="6">6+</h3>
-                    <p>Tahun Pengalaman</p>
-                </div>
-                <div class="stat-box glass-effect">
-                    <div class="stat-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="counter" data-target="100">100%</h3>
-                    <p>% Live & Verified</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll Down</p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Kenali Saya Lebih Dekat</span>
-                <h2 class="section-title">Tentang Saya</h2>
-                <p class="section-subtitle">Passion, Experience, dan Dedikasi dalam Teknologi</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-images">
-                    <div class="img-container main-img glass-effect">
-                        <img src="image.png" alt="Ari Mahendra" class="profile-pic">
-                        <div class="img-overlay"></div>
-                        <div class="img-badge">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Verified</span>
-                        </div>
-                    </div>
-                    <div class="img-container secondary-img glass-effect">
-                        <img src="image copy.png" alt="Ari Mahendra" class="profile-pic">
-                        <div class="img-overlay"></div>
-                    </div>
-                    <!-- Decorative Elements -->
-                    <div class="img-decoration decoration-1"></div>
-                    <div class="img-decoration decoration-2"></div>
+            <div class="section-label">TENTANG SAYA</div>
+            <h2 class="section-heading">Prinsip & Rekam Jejak Rekayasa</h2>
+            <p class="section-sub">Bagaimana saya mengeksekusi visi bisnis menjadi produk nyata yang diandalkan pengguna</p>
+
+            <div class="about-grid">
+                <div class="about-narrative">
+                    <p class="lead-text">
+                        Saya memadukan disiplin rekayasa sistem yang kokoh dengan metodologi modern <b>AI-Accelerated Engineering (Vibe Coding)</b> untuk meluncurkan produk perangkat lunak berkinerja tinggi secara cepat dan teruji nyata di pasar.
+                    </p>
+                    <p>
+                        Pengalaman saya mencakup spektrum penuh (<i>Zero-to-One</i>): merancang arsitektur <b>Flutter Monorepo</b> yang menyatukan 3 aplikasi sekaligus (Buyer, Seller, Driver) di Google Play Store, memanajemeni <b>40+ microservices serverless</b> di Google Cloud Platform, hingga membangun sistem buku besar transaksi (<i>Financial Integrity Engine</i>) yang kebal terhadap <i>double-spending</i>.
+                    </p>
+                    <p>
+                        Bagi saya, perangkat lunak yang hebat tidak diukur dari seberapa banyak baris kodenya, melainkan seberapa andal sistem tersebut menyelesaikan masalah nyata, menjaga keutuhan data finansial, dan menghasilkan efisiensi biaya infrastruktur.
+                    </p>
                 </div>
-                
-                <div class="about-text">
-                    <h3>
-                        <span class="highlight-text">Full Stack Product Builder</span> & 
-                        <span class="gradient-text">Enterprise SaaS Architect</span>
-                    </h3>
-                    <div class="badge-container">
-                        <span class="skill-badge"><i class="fab fa-google-play"></i> 3 Apps di Play Store</span>
-                        <span class="skill-badge"><i class="fas fa-server"></i> 40+ GCP Microservices</span>
-                        <span class="skill-badge"><i class="fas fa-brain"></i> AI Systems Engineer</span>
-                        <span class="skill-badge"><i class="fas fa-laptop-code"></i> Product Builder</span>
-                    </div>
-                    <p>
-                        Halo! Saya <strong>Ari Mahendra</strong>, seorang Product Builder dan Systems Engineer otodidak yang memadukan rekayasa perangkat lunak modern dengan 
-                        <span class="highlight-text">AI-Accelerated Engineering (Vibe Coding)</span> untuk meluncurkan produk digital berkinerja tinggi secara cepat dan teruji nyata di pasar.
-                    </p>
-                    <p>
-                        Rekam jejak saya mencakup pembangunan <strong>Kios Market</strong> (ekosistem hyperlocal marketplace & logistik terintegrasi dengan 3 aplikasi aktif di Google Play Store), 
-                        <strong>Koperasi Mandiri Utama Seroja</strong> (SaaS manajemen koperasi karyawan & pinjaman), 
-                        <strong>KiosMovie</strong> (platform streaming video terdistribusi global via Cloudflare), 
-                        serta arsitektur hybrid-cloud dan agen AI mandiri.
-                    </p>
-                    
-                    <!-- Key Points -->
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
-                            <div>
-                                <h4>Fast Learner</h4>
-                                <p>Cepat beradaptasi dengan teknologi baru</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <div>
-                                <h4>Problem Solver</h4>
-                                <p>Solusi kreatif untuk tantangan kompleks</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-handshake"></i>
-                            <div>
-                                <h4>Team Player</h4>
-                                <p>Kolaborasi efektif dalam tim</p>
-                            </div>
+
+                <div class="pillars-list">
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="pillar-content">
+                            <h4>High-Velocity Execution</h4>
+                            <p>Kemampuan membangun dari nol hingga produk live di server produksi dalam hitungan hari dengan memanfaatkan orkestrasi AI terukur.</p>
                         </div>
                     </div>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h4>3</h4>
-                            <p>Apps di Play Store</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>40+</h4>
-                            <p>GCP Microservices</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>6+</h4>
-                            <p>Tahun Pengalaman</p>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="pillar-content">
+                            <h4>End-to-End Ownership</h4>
+                            <p>Menguasai seluruh siklus produk: desain antarmuka mobile, arsitektur database NoSQL/SQL, deployment cloud, dan keamanan jaringan.</p>
                         </div>
                     </div>
-                    
-                    <div class="about-cta">
-                        <a href="#contact" class="btn btn-primary">
-                            <span>Mari Berkolaborasi</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i>
-                            <span>Download CV</span>
-                        </a>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="pillar-content">
+                            <h4>Financial & Transactional Integrity</h4>
+                            <p>Teruji membangun modul perhitungan komisi otomatis, rekonsiliasi saldo dompet digital, dan pencatatan buku besar koperasi terenkripsi.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Matrix Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Keahlian Teknis</span>
-                <h2 class="section-title">Keahlian</h2>
-                <p class="section-subtitle">Teknologi dan tools yang saya kuasai dengan baik</p>
-            </div>
-            
-            <!-- Technical Skills with Progress Bars -->
-            <div class="skills-category">
-                <h3 class="category-title fade-in">Frontend Development</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar-item fade-in">
-                        <div class="skill-info">
-                            <span>HTML5 & CSS3</span>
-                            <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="95" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar-item fade-in delay-1">
-                        <div class="skill-info">
-                            <span>JavaScript / ES6+</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="90" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar-item fade-in delay-2">
-                        <div class="skill-info">
-                            <span>React.js</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="85" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="section-label">STACK & KAPABILITAS</div>
+            <h2 class="section-heading">Arsitektur Teknologi yang Dikuasai</h2>
+            <p class="section-sub">Fondasi teknis yang saya terapkan pada produk berskala produksi</p>
 
-            <div class="skills-category">
-                <h3 class="category-title fade-in">Backend Development</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar-item fade-in">
-                        <div class="skill-info">
-                            <span>Node.js & Express</span>
-                            <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="88" style="width: 88%;"></div>
-                        </div>
+            <div class="skills-matrix">
+                <div class="skill-category-card">
+                    <div class="cat-header">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <h3>Mobile & Frontend</h3>
                     </div>
-                    <div class="skill-bar-item fade-in delay-1">
-                        <div class="skill-info">
-                            <span>PHP & Laravel</span>
-                            <span class="skill-percentage">82%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="82" style="width: 82%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar-item fade-in delay-2">
-                        <div class="skill-info">
-                            <span>Database (MySQL, MongoDB)</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="85" style="width: 85%;"></div>
-                        </div>
-                    </div>
+                    <ul class="skill-items">
+                        <li><span>Flutter & Dart (Monorepo)</span> <span class="skill-badge">Core</span></li>
+                        <li><span>Google Play Console Launch</span> <span class="skill-badge">Live</span></li>
+                        <li><span>React.js & Jamstack Web</span> <span class="skill-badge">Proficient</span></li>
+                        <li><span>Progressive Web Apps (PWA)</span> <span class="skill-badge">Advanced</span></li>
+                        <li><span>HTML5, CSS3 & JavaScript (ES6+)</span> <span class="skill-badge">Advanced</span></li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="skills-category">
-                <h3 class="category-title fade-in">AI & Other Skills</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar-item fade-in">
-                        <div class="skill-info">
-                            <span>AI Prompt Engineering</span>
-                            <span class="skill-percentage">92%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="92" style="width: 92%;"></div>
-                        </div>
+                <div class="skill-category-card">
+                    <div class="cat-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & Serverless</h3>
                     </div>
-                    <div class="skill-bar-item fade-in delay-1">
-                        <div class="skill-info">
-                            <span>UI/UX Design</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="80" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar-item fade-in delay-2">
-                        <div class="skill-info">
-                            <span>Git & DevOps</span>
-                            <span class="skill-percentage">78%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-fill" data-progress="78" style="width: 78%;"></div>
-                        </div>
-                    </div>
+                    <ul class="skill-items">
+                        <li><span>GCP Cloud Functions (40+ APIs)</span> <span class="skill-badge">Core</span></li>
+                        <li><span>Node.js & Express.js REST</span> <span class="skill-badge">Advanced</span></li>
+                        <li><span>PHP & Laravel (SaaS Backend)</span> <span class="skill-badge">Proficient</span></li>
+                        <li><span>Python (Otomasi & OpenCV)</span> <span class="skill-badge">Advanced</span></li>
+                        <li><span>Microservices & Event-Driven</span> <span class="skill-badge">Core</span></li>
+                    </ul>
                 </div>
-            </div>
 
-            <!-- Skills Grid (Icon Based) -->
-            <h3 class="category-title fade-in" style="margin-top: 4rem;">Tools & Technologies</h3>
-            <div class="skills-grid">
-                <div class="skill-card fade-in up">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Struktur web modern dan semantik.</p>
+                <div class="skill-category-card">
+                    <div class="cat-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Real-Time</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span>Google Firestore (NoSQL)</span> <span class="skill-badge">Core</span></li>
+                        <li><span>Firebase RTDB (Live GPS Track)</span> <span class="skill-badge">Core</span></li>
+                        <li><span>PostgreSQL & Supabase</span> <span class="skill-badge">Proficient</span></li>
+                        <li><span>MySQL & Relational Schema</span> <span class="skill-badge">Proficient</span></li>
+                        <li><span>Financial Ledger & Reconciliation</span> <span class="skill-badge">Specialist</span></li>
+                    </ul>
                 </div>
-                <div class="skill-card fade-in up delay-1">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Styling responsif, Flexbox, Grid, dan Animasi.</p>
-                </div>
-                <div class="skill-card fade-in up delay-2">
-                    <i class="fa-brands fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>Interaktivitas dinamis dan manipulasi DOM.</p>
-                </div>
-                <div class="skill-card fade-in up delay-3">
-                    <i class="fa-brands fa-react"></i>
-                    <h3>React.js</h3>
-                    <p>Library modern untuk membangun UI interaktif.</p>
-                </div>
-                <div class="skill-card fade-in up delay-4">
-                    <i class="fa-brands fa-node"></i>
-                    <h3>Node.js</h3>
-                    <p>Runtime JavaScript untuk backend development.</p>
-                </div>
-                <div class="skill-card fade-in up">
-                    <i class="fa-solid fa-robot"></i>
-                    <h3>AI Prompt Engineering</h3>
-                    <p>Optimasi AI untuk hasil maksimal dan solusi cerdas.</p>
+
+                <div class="skill-category-card">
+                    <div class="cat-header">
+                        <i class="fas fa-cloud-arrow-up"></i>
+                        <h3>Cloud, AI & DevOps</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span>Autonomous AI Agents & LLM</span> <span class="skill-badge">Advanced</span></li>
+                        <li><span>Cloudflare Pages & Tunnels (Zero Trust)</span> <span class="skill-badge">Core</span></li>
+                        <li><span>Oracle Cloud (OCI Linux) & AWS</span> <span class="skill-badge">Proficient</span></li>
+                        <li><span>Tailscale Private Mesh VPN</span> <span class="skill-badge">Advanced</span></li>
+                        <li><span>Linux Sysadmin, PM2 & Git</span> <span class="skill-badge">Advanced</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Bento Grid) -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Karya Skala Produksi</span>
-                <h2 class="section-title">Proyek & Produk Unggulan</h2>
-                <p class="section-subtitle">Sistem perangkat lunak nyata yang aktif, teruji di pasar, dan dapat diverifikasi langsung</p>
-            </div>
-            
-            <div class="bento-project-grid">
+            <div class="section-label">PORTOFOLIO TERVERIFIKASI</div>
+            <h2 class="section-heading">Proyek & Produk Unggulan</h2>
+            <p class="section-sub">Setiap produk di bawah ini aktif, dapat diuji langsung, dan memiliki tautan resmi</p>
+
+            <div class="bento-grid">
                 
-                <!-- FEATURED 1: KIOS MARKET ECOSYSTEM (FULL WIDTH BENTO HERO) -->
-                <div class="project-card featured-card">
-                    <div class="featured-badge">
-                        <span class="live-dot"></span> 3 APLIKASI AKTIF DI GOOGLE PLAY STORE
+                <!-- BENTO HERO CARD: KIOS MARKET -->
+                <div class="bento-card bento-hero">
+                    <div class="card-status-row">
+                        <span class="live-pill"><span class="pulse-dot"></span> 3 APLIKASI AKTIF DI GOOGLE PLAY STORE</span>
+                        <span class="meta-tag">Hyperlocal Super App</span>
                     </div>
-                    <div class="featured-content">
-                        <div class="featured-text">
-                            <span class="project-category">Hyperlocal Super App & On-Demand Logistics</span>
-                            <h3>Kios Market Ecosystem (Buyer, Merchant, Driver)</h3>
-                            <p>
-                                Platform marketplace lokal dan layanan antar cepat di Duri, Riau. Dibangun dengan arsitektur <b>Flutter Monorepo</b> yang mengintegrasikan tiga aplikasi terpisah dalam satu basis kode terpadu. Didukung oleh <b>40+ Serverless Microservices di Google Cloud Platform</b>, pelacakan kurir live real-time berbasis <b>Firebase Realtime Database (RTDB)</b>, dan sistem buku besar transaksi <i>Financial Integrity Engine</i>.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Flutter Monorepo</span>
-                                <span class="tag">GCP Cloud Functions (40+)</span>
-                                <span class="tag">Firebase RTDB Tracking</span>
-                                <span class="tag">Google Firestore</span>
-                                <span class="tag">Financial Ledger</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.buyer" target="_blank" class="project-btn project-btn-play" title="Download Kios Market di Google Play">
-                                    <i class="fab fa-google-play"></i> App Buyer
-                                </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.seller" target="_blank" class="project-btn project-btn-play" title="Download Kios Market Merchant di Google Play">
-                                    <i class="fab fa-google-play"></i> App Merchant
-                                </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.driver" target="_blank" class="project-btn project-btn-play" title="Download Kios Market Driver di Google Play">
-                                    <i class="fab fa-google-play"></i> App Driver
-                                </a>
-                                <a href="https://kiosmarketindonesia.id" target="_blank" class="project-btn" title="Kunjungi Website Kios Market">
-                                    <i class="fas fa-globe"></i> Website Resmi
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 2. KOPERASI MANDIRI UTAMA SEROJA -->
-                <div class="project-card">
-                    <div class="card-header-badge">
-                        <span class="live-dot"></span> LIVE WEB SAAS
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Enterprise SaaS & Financial System</span>
-                        <h3>Koperasi Mandiri Utama Seroja</h3>
-                        <p>
-                            Solusi aplikasi web SaaS internal untuk digitalisasi manajemen koperasi karyawan: pencatatan keanggotaan terpusat, pembukuan simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan laporan neraca keuangan terenkripsi dengan Role-Based Access Control (RBAC).
+                    <div class="bento-hero-body">
+                        <h3 class="bento-title">Kios Market Ecosystem (Buyer, Merchant, Driver)</h3>
+                        <p class="bento-desc">
+                            Platform marketplace lokal dan layanan antar cepat di Duri, Riau. Dibangun dengan arsitektur <b>Flutter Monorepo</b> yang mengintegrasikan tiga aplikasi terpisah dalam satu basis kode terpadu. Didukung oleh <b>40+ Serverless Microservices di Google Cloud Platform</b>, pelacakan kurir live real-time berbasis <b>Firebase Realtime Database (RTDB)</b>, dan sistem buku besar transaksi <i>Financial Integrity Engine</i> untuk komisi otomatis tanpa risiko <i>double-spending</i>.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Enterprise SaaS</span>
-                            <span class="tag">PHP / Laravel</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Vercel</span>
+
+                        <div class="tag-row">
+                            <span class="code-tag">Flutter Monorepo</span>
+                            <span class="code-tag">GCP Functions (40+)</span>
+                            <span class="code-tag">Firebase RTDB</span>
+                            <span class="code-tag">Google Firestore</span>
+                            <span class="code-tag">Financial Ledger</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://koperasi-mandiri-utama-seroja-v2.vercel.app" target="_blank" class="project-btn" title="Buka Live Demo Koperasi">
-                                <i class="fas fa-external-link-alt"></i> Buka Aplikasi Live
+
+                        <div class="bento-action-row">
+                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.buyer" target="_blank" class="app-btn">
+                                <i class="fab fa-google-play"></i> App Buyer
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.seller" target="_blank" class="app-btn">
+                                <i class="fab fa-google-play"></i> App Merchant
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.kiosmarket.driver" target="_blank" class="app-btn">
+                                <i class="fab fa-google-play"></i> App Driver
+                            </a>
+                            <a href="https://kiosmarketindonesia.id" target="_blank" class="app-btn app-btn-ghost">
+                                <i class="fas fa-globe"></i> Website Resmi
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. KIOSMOVIE STREAMING PLATFORM -->
-                <div class="project-card">
-                    <div class="card-header-badge">
-                        <span class="live-dot"></span> LIVE WEB PLATFORM
+                <!-- CARD 2: KOPERASI MANDIRI UTAMA SEROJA -->
+                <div class="bento-card">
+                    <div class="card-status-row">
+                        <span class="live-pill"><span class="pulse-dot"></span> LIVE WEB SAAS</span>
+                        <span class="meta-tag">Enterprise SaaS</span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">Distributed Video Streaming & AI Automation</span>
-                        <h3>KiosMovie Streaming Platform</h3>
-                        <p>
-                            Platform agregasi dan streaming film berkinerja tinggi. Menggunakan frontend Jamstack di Cloudflare Pages, backend Node.js pada Oracle Cloud VPS yang dihubungkan secara aman via Cloudflare Tunnels (Zero Trust), dan alur kerja AI untuk pembuatan sinopsis film otomatis.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Cloudflare Pages</span>
-                            <span class="tag">Node.js API</span>
-                            <span class="tag">Cloudflare Tunnels</span>
-                            <span class="tag">AI Ingestion</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://kiosdracin.pages.dev" target="_blank" class="project-btn" title="Kunjungi KiosMovie">
-                                <i class="fas fa-film"></i> Tonton di Web Live
-                            </a>
-                        </div>
+                    <h3 class="bento-title">Koperasi Mandiri Utama Seroja</h3>
+                    <p class="bento-desc">
+                        Aplikasi web SaaS internal untuk digitalisasi manajemen koperasi karyawan: pencatatan keanggotaan terpusat, buku besar simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan laporan neraca keuangan terenkripsi dengan Role-Based Access Control (RBAC).
+                    </p>
+                    <div class="tag-row">
+                        <span class="code-tag">Enterprise SaaS</span>
+                        <span class="code-tag">PHP / Laravel</span>
+                        <span class="code-tag">MySQL</span>
+                        <span class="code-tag">Vercel</span>
+                    </div>
+                    <div class="bento-action-row">
+                        <a href="https://koperasi-mandiri-utama-seroja-v2.vercel.app" target="_blank" class="app-btn">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Buka Aplikasi Live
+                        </a>
                     </div>
                 </div>
 
-                <!-- 4. SMART CLOUD POS & RETAIL SYSTEM -->
-                <div class="project-card">
-                    <div class="card-header-badge">
-                        <span class="live-dot"></span> PRODUCTION PWA
+                <!-- CARD 3: KIOSMOVIE STREAMING PLATFORM -->
+                <div class="bento-card">
+                    <div class="card-status-row">
+                        <span class="live-pill"><span class="pulse-dot"></span> LIVE STREAMING</span>
+                        <span class="meta-tag">Media & AI Pipeline</span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">Retail Point of Sale & Inventory</span>
-                        <h3>Smart Cloud POS (Kasir UMKM)</h3>
-                        <p>
-                            Aplikasi kasir pintar berbasis Progressive Web App (PWA) untuk kecepatan transaksi ritel UMKM. Dilengkapi pencatatan transaksi penjualan instan, manajemen kontrol stok multi-kategori, laporan omset harian, dan fitur cetak struk digital.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript PWA</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Cloud POS</span>
-                            <span class="tag">Offline-Ready</span>
-                        </div>
+                    <h3 class="bento-title">KiosMovie Streaming Platform</h3>
+                    <p class="bento-desc">
+                        Platform agregasi dan streaming film berkinerja tinggi. Menggunakan frontend Jamstack di Cloudflare Pages, backend Node.js pada Oracle Cloud VPS yang dihubungkan secara aman via Cloudflare Tunnels (Zero Trust), dan alur kerja AI untuk pembuatan sinopsis film otomatis.
+                    </p>
+                    <div class="tag-row">
+                        <span class="code-tag">Cloudflare Pages</span>
+                        <span class="code-tag">Node.js API</span>
+                        <span class="code-tag">Cloudflare Tunnels</span>
+                        <span class="code-tag">AI Ingestion</span>
+                    </div>
+                    <div class="bento-action-row">
+                        <a href="https://kiosdracin.pages.dev" target="_blank" class="app-btn">
+                            <i class="fas fa-film"></i> Tonton di Web Live
+                        </a>
                     </div>
                 </div>
 
-                <!-- 5. AUTONOMOUS AI AGENTS & HYBRID CLOUD -->
-                <div class="project-card">
-                    <div class="card-header-badge">
-                        <span class="live-dot"></span> HYBRID CLOUD & AI
+                <!-- CARD 4: SMART CLOUD POS -->
+                <div class="bento-card">
+                    <div class="card-status-row">
+                        <span class="live-pill"><span class="pulse-dot"></span> PRODUCTION PWA</span>
+                        <span class="meta-tag">Retail Point of Sale</span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">AI Infrastructure & Micro-Gateways</span>
-                        <h3>Autonomous AI Agents & Mesh Cloud</h3>
-                        <p>
-                            Infrastruktur agen AI mandiri dan bot Telegram mikro-gateway (@pantaukesehatanbot dan @penghilNgbot zero-storage image processing). Berjalan di atas jaringan hybrid cloud mandiri yang menghubungkan server OCI (12GB RAM), AWS Lightsail Singapore, dan home server via Tailscale Mesh VPN.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AI LLM Agents</span>
-                            <span class="tag">Python OpenCV</span>
-                            <span class="tag">Telegram Bot API</span>
-                            <span class="tag">Tailscale Mesh</span>
-                        </div>
+                    <h3 class="bento-title">Smart Cloud POS (Kasir UMKM)</h3>
+                    <p class="bento-desc">
+                        Aplikasi kasir pintar berbasis Progressive Web App (PWA) untuk kecepatan transaksi ritel UMKM. Dilengkapi pencatatan transaksi penjualan instan, manajemen kontrol stok multi-kategori, laporan omset harian, dan fitur cetak struk digital.
+                    </p>
+                    <div class="tag-row">
+                        <span class="code-tag">JavaScript PWA</span>
+                        <span class="code-tag">Firebase</span>
+                        <span class="code-tag">Cloud POS</span>
+                        <span class="code-tag">Offline-Ready</span>
+                    </div>
+                </div>
+
+                <!-- CARD 5: AUTONOMOUS AI & MESH CLOUD -->
+                <div class="bento-card">
+                    <div class="card-status-row">
+                        <span class="live-pill"><span class="pulse-dot"></span> HYBRID CLOUD & AI</span>
+                        <span class="meta-tag">AI Infrastructure</span>
+                    </div>
+                    <h3 class="bento-title">Autonomous AI Agents & Mesh Cloud</h3>
+                    <p class="bento-desc">
+                        Infrastruktur agen AI mandiri dan bot Telegram mikro-gateway (@pantaukesehatanbot dan @penghilNgbot zero-storage image processing). Berjalan di atas jaringan hybrid cloud mandiri yang menghubungkan server OCI (12GB RAM), AWS Lightsail Singapore, dan home server via Tailscale Mesh VPN.
+                    </p>
+                    <div class="tag-row">
+                        <span class="code-tag">AI LLM Agents</span>
+                        <span class="code-tag">Python OpenCV</span>
+                        <span class="code-tag">Telegram Bot API</span>
+                        <span class="code-tag">Tailscale Mesh</span>
                     </div>
                 </div>
 
@@ -555,261 +380,147 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title fade-in">Layanan & Solusi</h2>
-            <p class="section-subtitle fade-in">Solusi rekayasa perangkat lunak skala produksi untuk bisnis dan perusahaan</p>
+            <div class="section-label">SOLUSI BISNIS</div>
+            <h2 class="section-heading">Layanan & Rekayasa Perangkat Lunak</h2>
+            <p class="section-sub">Membantu perusahaan dan pemilik bisnis meluncurkan produk digital yang siap pakai dan aman</p>
+
             <div class="services-grid">
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-building-user"></i>
-                    </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-building-user"></i></div>
                     <h3>Custom Enterprise SaaS & Business Tools</h3>
-                    <p>Membangun sistem software kustom skala perusahaan: sistem koperasi karyawan, ERP logistik, inventory, CRM, dan multi-role dashboard dengan pembukuan finansial aman.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Multi-Tenant Architecture</li>
-                        <li><i class="fa-solid fa-check"></i> Financial Ledger & Anti-Fraud</li>
-                        <li><i class="fa-solid fa-check"></i> Role-Based Access Control</li>
+                    <p>Membangun software operasional perusahaan: sistem koperasi karyawan, ERP logistik, inventaris stok, CRM, dan multi-role dashboard dengan pembukuan finansial aman.</p>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check"></i> Multi-Tenant Architecture</li>
+                        <li><i class="fas fa-check"></i> Financial Ledger & Anti-Fraud</li>
+                        <li><i class="fas fa-check"></i> Role-Based Access Control (RBAC)</li>
                     </ul>
                 </div>
 
-                <div class="service-card fade-in delay-1">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
                     <h3>Mobile App Development (Flutter)</h3>
                     <p>Pengembangan aplikasi mobile modern untuk Android dan iOS menggunakan Flutter Monorepo. Teruji terbit resmi di Google Play Store dengan performa native tinggi.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Cross-Platform (Android & iOS)</li>
-                        <li><i class="fa-solid fa-check"></i> Live Real-Time GPS Tracking</li>
-                        <li><i class="fa-solid fa-check"></i> Google Play Store Publishing</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check"></i> Cross-Platform (Android & iOS)</li>
+                        <li><i class="fas fa-check"></i> Live Real-Time GPS Tracking</li>
+                        <li><i class="fas fa-check"></i> Google Play Store Publishing</li>
                     </ul>
                 </div>
 
-                <div class="service-card fade-in delay-2">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
                     <h3>AI Integration & Agentic Automation</h3>
                     <p>Mengintegrasikan kecerdasan buatan cerdas ke dalam alur kerja bisnis: LLM ingestion pipelines, bot Telegram otomatisasi, autonomous agent workflow, dan prompt engineering terukur.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Autonomous AI Agents</li>
-                        <li><i class="fa-solid fa-check"></i> Smart Content Ingestion</li>
-                        <li><i class="fa-solid fa-check"></i> Custom Bot Gateways</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check"></i> Autonomous AI Agents</li>
+                        <li><i class="fas fa-check"></i> Smart Content Ingestion</li>
+                        <li><i class="fas fa-check"></i> Custom Bot Gateways</li>
                     </ul>
                 </div>
 
-                <div class="service-card fade-in delay-3">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-cloud"></i>
-                    </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
                     <h3>Backend Microservices & Cloud Infrastructure</h3>
                     <p>Arsitektur backend serverless berskala tinggi di Google Cloud Platform (GCP Cloud Functions), Cloudflare Tunnels (Zero Trust), dan manajemen server Linux mandiri.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> GCP Serverless Functions</li>
-                        <li><i class="fa-solid fa-check"></i> Cloudflare Edge & Tunnels</li>
-                        <li><i class="fa-solid fa-check"></i> Linux Server & Tailscale Mesh</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check"></i> GCP Serverless Functions</li>
+                        <li><i class="fas fa-check"></i> Cloudflare Edge & Tunnels</li>
+                        <li><i class="fas fa-check"></i> Linux Server & Tailscale Mesh</li>
                     </ul>
                 </div>
-
-                <div class="service-card fade-in delay-4">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <h3>Website Profesional & Jamstack Web</h3>
-                    <p>Membangun website modern, responsif, dan SEO-friendly dengan teknologi Jamstack berkecepatan tinggi di Cloudflare Pages dan Vercel.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Global CDN & Fast Load</li>
-                        <li><i class="fa-solid fa-check"></i> Company Profile & Landing Page</li>
-                        <li><i class="fa-solid fa-check"></i> SEO & Analytics Terpadu</li>
-                    </ul>
-                </div>
-
-                <div class="service-card fade-in delay-5">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-cash-register"></i>
-                    </div>
-                    <h3>Point of Sale (POS) & Ritel UMKM</h3>
-                    <p>Aplikasi kasir pintar berbasis PWA untuk pencatatan transaksi ritel, kontrol inventaris stok barang harian, cetak struk, dan rekonsiliasi omset otomatis.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Cloud Sync & Offline Mode</li>
-                        <li><i class="fa-solid fa-check"></i> Manajemen Stok Real-Time</li>
-                        <li><i class="fa-solid fa-check"></i> Laporan Keuangan Harian</li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Experience & Education Timeline -->
+    <!-- Experience Timeline Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Perjalanan Rekayasa & Karir</span>
-                <h2 class="section-title">Pengalaman & Rekam Jejak</h2>
-                <p class="section-subtitle">Perjalanan nyata membangun produk digital, SaaS, dan infrastruktur cloud</p>
-            </div>
-            
-            <div class="timeline">
-                <!-- 1. Kios Market -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fa-solid fa-store"></i>
+            <div class="section-label">PERJALANAN TEKNOLOGI</div>
+            <h2 class="section-heading">Pengalaman & Rekam Jejak</h2>
+            <p class="section-sub">Jejak langkah nyata membangun produk digital dan infrastruktur cloud</p>
+
+            <div class="timeline-container">
+                
+                <div class="timeline-entry">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">2021 — SEKARANG</span>
+                        <span class="timeline-place">Duri, Riau, ID</span>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2021 - Sekarang</span>
-                        <h3>Founder & Lead Product Architect</h3>
-                        <h4>Kios Market Ecosystem (Duri, Riau)</h4>
-                        <p>Memimpin perancangan dan implementasi ekosistem on-demand marketplace & pengiriman lokal. Mengembangkan arsitektur Flutter Monorepo untuk 3 aplikasi mandiri (Buyer, Merchant, Driver) yang resmi tayang di Google Play Store, serta memanajemeni 40+ microservices serverless di Google Cloud Platform.</p>
-                        <div class="timeline-tags">
-                            <span>Flutter Monorepo</span>
-                            <span>GCP Cloud Functions</span>
-                            <span>Firebase RTDB</span>
-                            <span>Firestore</span>
-                            <span>Google Play</span>
+                    <div class="timeline-card">
+                        <h3 class="role-title">Founder & Lead Product Architect</h3>
+                        <h4 class="company-title">Kios Market Ecosystem</h4>
+                        <p class="role-desc">
+                            Memimpin perancangan dan implementasi ekosistem on-demand marketplace & pengiriman lokal. Mengembangkan arsitektur Flutter Monorepo untuk 3 aplikasi mandiri (Buyer, Merchant, Driver) yang resmi tayang di Google Play Store, serta memanajemeni 40+ microservices serverless di Google Cloud Platform.
+                        </p>
+                        <div class="tag-row">
+                            <span class="code-tag">Flutter Monorepo</span>
+                            <span class="code-tag">GCP Functions</span>
+                            <span class="code-tag">Firebase RTDB</span>
+                            <span class="code-tag">Google Play</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Enterprise SaaS & Koperasi -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fa-solid fa-building-columns"></i>
+                <div class="timeline-entry">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">2024 — SEKARANG</span>
+                        <span class="timeline-place">Cloud Distributed</span>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2025</span>
-                        <h3>Enterprise SaaS Developer</h3>
-                        <h4>Koperasi Mandiri Utama Seroja & B2B Solutions</h4>
-                        <p>Merancang dan mendeploy aplikasi web SaaS untuk digitalisasi operasional koperasi karyawan. Mengimplementasikan modul pembukuan simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan manajemen hak akses berjenjang (RBAC) dengan keamanan data terenkripsi.</p>
-                        <div class="timeline-tags">
-                            <span>Enterprise SaaS</span>
-                            <span>PHP / Laravel</span>
-                            <span>MySQL</span>
-                            <span>REST APIs</span>
-                            <span>Vercel</span>
+                    <div class="timeline-card">
+                        <h3 class="role-title">Full-Stack & Cloud Infrastructure Engineer</h3>
+                        <h4 class="company-title">KiosMovie Video Streaming Platform</h4>
+                        <p class="role-desc">
+                            Membangun platform agregasi video terdistribusi global menggunakan Cloudflare Pages, backend Node.js pada Oracle Cloud VPS yang dihubungkan secara aman via Cloudflare Tunnels (Zero Trust). Mengembangkan automated AI ingestion pipeline untuk sinkronisasi film dan pembuatan sinopsis otomatis dengan LLM.
+                        </p>
+                        <div class="tag-row">
+                            <span class="code-tag">Cloudflare Pages</span>
+                            <span class="code-tag">Node.js</span>
+                            <span class="code-tag">CF Tunnels</span>
+                            <span class="code-tag">AI Pipeline</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. KiosMovie Streaming & Cloudflare Tunnels -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fa-solid fa-play"></i>
+                <div class="timeline-entry">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">2023 — 2025</span>
+                        <span class="timeline-place">Vercel Deployment</span>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Sekarang</span>
-                        <h3>Full-Stack & Cloud Infrastructure Engineer</h3>
-                        <h4>KiosMovie Video Streaming Platform</h4>
-                        <p>Membangun platform agregasi video terdistribusi global menggunakan Cloudflare Pages, backend Node.js pada Oracle Cloud VPS, dan Cloudflare Tunnels (Zero Trust). Mengembangkan automated AI ingestion pipeline untuk sinkronisasi film dan pembuatan sinopsis otomatis dengan LLM.</p>
-                        <div class="timeline-tags">
-                            <span>Cloudflare Pages</span>
-                            <span>Node.js</span>
-                            <span>Cloudflare Tunnels</span>
-                            <span>Oracle Cloud</span>
-                            <span>AI LLM Pipeline</span>
+                    <div class="timeline-card">
+                        <h3 class="role-title">Enterprise SaaS Developer</h3>
+                        <h4 class="company-title">Koperasi Mandiri Utama Seroja</h4>
+                        <p class="role-desc">
+                            Merancang dan mendeploy aplikasi web SaaS untuk digitalisasi operasional koperasi karyawan. Mengimplementasikan modul pembukuan simpanan, pengajuan pinjaman, kalkulator angsuran otomatis, dan manajemen hak akses berjenjang (RBAC) dengan keamanan data terenkripsi.
+                        </p>
+                        <div class="tag-row">
+                            <span class="code-tag">Enterprise SaaS</span>
+                            <span class="code-tag">PHP / Laravel</span>
+                            <span class="code-tag">MySQL</span>
+                            <span class="code-tag">RBAC Security</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Self-Taught & AI-Accelerated Engineering -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fa-solid fa-laptop-code"></i>
+                <div class="timeline-entry">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">2017 — SEKARANG</span>
+                        <span class="timeline-place">Continuous Mastery</span>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2017 - Sekarang</span>
-                        <h3>Autodidact & AI-Accelerated Product Builder</h3>
-                        <h4>Independent Software & Infrastructure Engineering</h4>
-                        <p>Mengembangkan kapabilitas rekayasa perangkat lunak secara otodidak melalui eksekusi proyek produksi nyata. Menguasai metode modern Vibe Coding berbantuan AI untuk mempercepat siklus peluncuran produk dari konsep awal hingga teruji live di tangan pengguna.</p>
-                        <div class="timeline-tags">
-                            <span>AI Systems</span>
-                            <span>Tailscale Mesh</span>
-                            <span>Linux Sysadmin</span>
-                            <span>Zero-to-One Launch</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title fade-in">Testimoni Klien</h2>
-            <p class="section-subtitle fade-in">Apa kata mereka tentang pekerjaan saya</p>
-            
-            <div class="testimonials-slider">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Ari sangat profesional dan responsif. Kios Market V2 yang dia kembangkan melebihi ekspektasi kami. Sistemnya robust dan mudah digunakan."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Budi Santoso</h4>
-                            <p>CEO, Kios Market</p>
+                    <div class="timeline-card">
+                        <h3 class="role-title">Autodidact & AI-Accelerated Product Builder</h3>
+                        <h4 class="company-title">Independent Software & Infrastructure Engineering</h4>
+                        <p class="role-desc">
+                            Mengembangkan kapabilitas rekayasa perangkat lunak secara otodidak melalui eksekusi proyek produksi nyata. Menguasai metode modern Vibe Coding berbantuan AI untuk mempercepat siklus peluncuran produk dari konsep awal hingga teruji live di tangan pengguna.
+                        </p>
+                        <div class="tag-row">
+                            <span class="code-tag">AI Systems</span>
+                            <span class="code-tag">Tailscale Mesh</span>
+                            <span class="code-tag">Linux Sysadmin</span>
+                            <span class="code-tag">Zero-to-One</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card fade-in delay-1">
-                    <div class="testimonial-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Sistem koperasi yang dibuat sangat membantu operasional kami. Fitur-fiturnya lengkap dan user-friendly. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Siti Nurhaliza</h4>
-                            <p>Manager, PT. Sejahtera</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card fade-in delay-2">
-                    <div class="testimonial-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Aplikasi POS yang dikembangkan sangat cepat dan stabil. Transaksi jadi lebih efisien. Support dari Ari juga sangat baik."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Ahmad Rizki</h4>
-                            <p>Owner, Toko Elektronik</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slider Navigation -->
-            <div class="slider-nav">
-                <button class="slider-btn prev-btn" aria-label="Previous">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <div class="slider-dots"></div>
-                <button class="slider-btn next-btn" aria-label="Next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -817,56 +528,75 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title fade-in">Hubungi Saya</h2>
-            <p class="contact-subtitle fade-in">Tertarik bekerja sama? Mari kita buat sesuatu yang luar biasa.</p>
-            <div class="contact-wrapper">
-                <div class="contact-info fade-in left">
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>arimahendra1202@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>0852-6307-4753</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-map-marker-alt"></i>
-                        <span>Indonesia</span>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://wa.me/6285263074753" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/kios-market" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://instagram.com/arimahendra19" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://facebook.com/public/Ari-Mahendra" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <!-- Keeping generic GitHub/LinkedIn if needed, or removing if user only wants specified ones. User said 'informasi lengkap' so maybe just what they provided. -->
-                    </div>
+            <div class="section-label">HUBUNGI SAYA</div>
+            <h2 class="section-heading">Mulai Kolaborasi atau Konsultasi Proyek</h2>
+            <p class="section-sub">Saya terbuka untuk proyek pengembangan SaaS, aplikasi mobile, konsultasi arsitektur cloud, atau kemitraan bisnis</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp Langsung</h3>
+                    <p>Respon cepat untuk diskusi proyek atau konsultasi teknis.</p>
+                    <a href="https://wa.me/6285263074753" target="_blank" class="contact-link">
+                        +62 852-6307-4753 &rarr;
+                    </a>
                 </div>
-                <form class="contact-form fade-in right">
-                    <input type="text" placeholder="Nama Anda" required>
-                    <input type="email" placeholder="Email Anda" required>
-                    <textarea rows="5" placeholder="Pesan Anda" required></textarea>
-                    <button type="submit" class="btn">Kirim Pesan</button>
-                </form>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Resmi</h3>
+                    <p>Kirimkan brief proyek atau proposal kerjasama formal.</p>
+                    <a href="mailto:arimahendra0908@gmail.com" class="contact-link">
+                        arimahendra0908@gmail.com &rarr;
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub Profile</h3>
+                    <p>Periksa repositori, kontribusi, dan basis kode publik saya.</p>
+                    <a href="https://github.com/kios-market" target="_blank" class="contact-link">
+                        github.com/kios-market &rarr;
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn Network</h3>
+                    <p>Terhubung untuk peluang profesional dan relasi industri.</p>
+                    <a href="https://id.linkedin.com/in/ari-mahendra-326254346" target="_blank" class="contact-link">
+                        Ari Mahendra on LinkedIn &rarr;
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Ari Mahendra. All Rights Reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">&lt;AM/&gt;</span> &bull; Ari Mahendra
+            </div>
+            <div class="footer-center">
+                Built with precision, high-contrast craft, and zero AI-slop.
+            </div>
+            <div class="footer-right">
+                &copy; 2026 Ari Mahendra. All rights reserved.
+            </div>
+        </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Particles.js -->
-    <!-- Vanilla Tilt -->
-    <!-- AOS Animation -->
-    <!-- Custom Script -->
-    <script src="script.js"></script>
+    <!-- Minimalist Vanilla Script -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
-
 </html>
